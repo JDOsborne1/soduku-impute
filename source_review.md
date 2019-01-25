@@ -15,6 +15,18 @@
 13. http://www.seanborman.com/publications/EM_algorithm.pdf
 14. http://pages.cs.wisc.edu/~jerryzhu/cs838/EM.pdf
 15. https://arxiv.org/pdf/1105.1476.pdf
+    * Expectation-Maximisation algorithm
+    * Where Y is a random variable with pdf. of p(y|Ó), the goal is to find the maximum of the probability distribution L(Ô) = p(y|Ô) over a "Search Space"
+      * This would represent the value which has the highest probabilty of being the true parameter Ô in the random variable distribution
+      * These problems only have a "Closed-form" solution in a minority of cases: most of which are quite boring
+    * EM is an iterative optimiser tailored for ML
+    * The definitive feature of EM as opposed to Newton methods is the underlying philosophy in the approximation scheme, which has a low reliance on calculus 
+    * Instead the idea is to introduce another random variable Z, which represents an easier maximisaton problem than Y. This is implemented by imputing/guessing some additional useful informaton. 
+      * Z can be any variable such that Ô -> Y -> Z is a Markov Chain
+        * Assuming p(y|z, Ô) is independent of Ô, that manifests a "Chapman-Kolmogorov" equation
+    * Z is a complete data space: If Z were fully observed, estimating Ô would be easy
+      * The conversion speed is very dependent on the specification of that data space, which has a arbitrary difficulty despite some problems naturally lending themselves to a hidden variable interpretation
+    * Emerges 
 16. https://webarchive.nationalarchives.gov.uk/20160113083211/http://www.ons.gov.uk/ons/guide-method/method-quality/general-methodology/data-editing-and-imputation/index.html
 17. http://www.iaeng.org/publication/WCE2012/WCE2012_pp391-394.pdf
     * Focus of paper on __FURIA: Fuzzy Unordered Rule Induction Algorithm__.
