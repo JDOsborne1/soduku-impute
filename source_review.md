@@ -40,6 +40,13 @@
 22. https://www.boost.org/doc/libs/1_69_0/libs/math/doc/html/math_toolkit/cubic_b.html
 23. https://www.boost.org/doc/libs/1_69_0/libs/math/doc/html/math_toolkit/sf_poly/chebyshev.html
 24. https://arxiv.org/pdf/1203.2295.pdf
+25. https://docs.python-guide.org/scenarios/ml/
+26. https://blog.dominodatalab.com/ab-testing-with-hierarchical-models-in-python/
+27. https://machinelearningmastery.com/metrics-evaluate-machine-learning-algorithms-python/
+28. https://python.libhunt.com/sixpack-alternatives
+29. https://python.libhunt.com/hypothesis-alternatives
+30. https://python.libhunt.com/pytest-alternatives
+31. https://python.libhunt.com/robotframework-alternatives
 
 
 
