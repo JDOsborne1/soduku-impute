@@ -26,7 +26,11 @@
         * Assuming p(y|z, Ô) is independent of Ô, that manifests a "Chapman-Kolmogorov" equation
     * Z is a complete data space: If Z were fully observed, estimating Ô would be easy
       * The conversion speed is very dependent on the specification of that data space, which has a arbitrary difficulty despite some problems naturally lending themselves to a hidden variable interpretation
-    * Emerges 
+    * References Jensen's Inequality in: T. M. Cover and J. A. Thomas. Elements of Information Theory.
+    * In section 2.2 it derives an auxilliary function: Q(θ, θ′) which is always less than or equal to the change in the Likelihood function: L between θ' and θ. and always 0 for Q(θ,θ) 
+    * As a consequence, when starting from θ', any value θ which has Q(θ,θ') > 0 is guaranteed to also have a higher value of L(θ).
+    * The EM algorithm is principially defined by iterating over increases in Q to find maxima in the likelihood function
+    * 
 16. https://webarchive.nationalarchives.gov.uk/20160113083211/http://www.ons.gov.uk/ons/guide-method/method-quality/general-methodology/data-editing-and-imputation/index.html
 17. http://www.iaeng.org/publication/WCE2012/WCE2012_pp391-394.pdf
     * Focus of paper on __FURIA: Fuzzy Unordered Rule Induction Algorithm__.
