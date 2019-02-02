@@ -6,6 +6,26 @@
    * gbayes:
 2. [Implementing Predictive Mean Matching in R](https://stats.idre.ucla.edu/r/faq/how-do-i-perform-multiple-imputation-using-predictive-mean-matching-in-r/)
 3. [Packages overierview: Analytics Vidhya](https://www.analyticsvidhya.com/blog/2016/03/tutorial-powerful-packages-imputing-missing-values/)
+   * The choice of imputation method often has serious consequences on the predictive ability of any model that is trained on it.
+   * MICE
+     * Multivariate Imputation via Chained Equations
+     * Assumes MAR
+     * Trains a regression model on the columns other than a given column of missing data
+     * uses that model to infill the missing data
+     * Linear regression is used on continuous data
+     * Logistic regression on categorical data
+     * The output of MICE is multiple datasets, which are different only where the imputation has happened
+       * It is common practice to build your models on each of the missing datasets seperately and then combine the results rather than combining the imputation and then building one model
+     * The common methods used in MICE are as follows:
+       1. PMM (Predictive Mean Matching)
+          1. For Numeric Vars
+       2. logreg (Logistic Regression)
+          1. for 2 level binary variables
+       3. polyreg (Bayesian polytomous regression) 
+          1. Factor variables with more than 2 levels
+       4. proportional odds model 
+          1. Ordered factor with >2 levels
+
 4. [Imputing With Mice](https://datascienceplus.com/imputing-missing-data-with-r-mice-package/)
 5. [Comparing 6 methods of imputation](https://www.omicsonline.org/open-access/a-comparison-of-six-methods-for-missing-data-imputation-2155-6180-1000224.php?aid=54590)
 6. [Multiple Imputation Methods]( https://www.statisticssolutions.com/multiple-imputation-for-missing-data/)
