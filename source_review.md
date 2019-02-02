@@ -4,7 +4,7 @@
    * aregImpute:
      * Implementing multiple imputation using
    * gbayes:
-2. [Implementing Predictive Mean Mathing in R](https://stats.idre.ucla.edu/r/faq/how-do-i-perform-multiple-imputation-using-predictive-mean-matching-in-r/)
+2. [Implementing Predictive Mean Matching in R](https://stats.idre.ucla.edu/r/faq/how-do-i-perform-multiple-imputation-using-predictive-mean-matching-in-r/)
 3. [Packages overierview: Analytics Vidhya](https://www.analyticsvidhya.com/blog/2016/03/tutorial-powerful-packages-imputing-missing-values/)
 4. [Imputing With Mice](https://datascienceplus.com/imputing-missing-data-with-r-mice-package/)
 5. [Comparing 6 methods of imputation](https://www.omicsonline.org/open-access/a-comparison-of-six-methods-for-missing-data-imputation-2155-6180-1000224.php?aid=54590)
