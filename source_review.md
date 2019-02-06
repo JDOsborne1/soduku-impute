@@ -25,6 +25,17 @@
           1. Factor variables with more than 2 levels
        4. proportional odds model 
           1. Ordered factor with >2 levels
+     * Nice Missing data visualisation package called "VIM"
+     * Mice function can impute data with multiple imputation with minimal configuration, there are a series of parameters and you need to specify a method. 
+      * m - number of imputed data sets
+      * maxit - the number of iterations used to impute missing values
+     * possible to use the with() function to build a model on multiple data sets, and pool() to consolidate the results.
+   * Amelia II 
+     * uses bootstrap based EMB algorithm (Expectation-Maximisation?)
+     * supports parallelism
+     * Assumes all Vairables have a MVN (Multivariate Normal Distribution). it uses means and covariances to summarise data
+     * Assumes MAR (Missing at Random)
+     * takes m bootstrap samples 
 
 4. [Imputing With Mice](https://datascienceplus.com/imputing-missing-data-with-r-mice-package/)
 5. [Comparing 6 methods of imputation](https://www.omicsonline.org/open-access/a-comparison-of-six-methods-for-missing-data-imputation-2155-6180-1000224.php?aid=54590)
